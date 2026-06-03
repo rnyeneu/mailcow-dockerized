@@ -6,3 +6,333 @@
 .ui-announcement-alert {
   margin: 10px 0px 10px 0px;
 }
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(23, 138, 127, 0.14), transparent 32rem),
+    linear-gradient(135deg, #f7faf9 0%, #eef4f2 46%, #f8fafc 100%);
+}
+
+.td-login-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.78);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.td-login-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #d7dfdc;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #374151;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+}
+
+.td-login-theme-toggle .form-check-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.td-login-theme-toggle .form-check-input {
+  margin: 0;
+}
+
+.td-login-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5.5rem 0 2.5rem;
+}
+
+.td-login-panel {
+  width: min(100%, 980px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 24px 70px rgba(17, 24, 39, 0.14);
+}
+
+.td-login-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 580px;
+  padding: 3rem;
+  color: #ffffff;
+  background:
+    linear-gradient(145deg, rgba(23, 138, 127, 0.94), rgba(19, 107, 99, 0.96)),
+    #178a7f;
+}
+
+.td-login-logo {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+.td-login-kicker {
+  margin: 0 0 0.75rem;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.td-login-brand h1 {
+  max-width: 440px;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.04;
+  font-weight: 700;
+}
+
+.td-login-copy {
+  max-width: 420px;
+  margin: 1.25rem 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.td-login-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.td-login-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.86rem;
+}
+
+.td-login-card {
+  border: 0;
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.td-login-card .card-body {
+  padding: 0 3rem 3rem;
+}
+
+.td-login-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 3rem 3rem 2rem;
+}
+
+.td-login-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.4rem;
+  color: #178a7f;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.td-login-card h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.td-login-field .input-group {
+  min-height: 50px;
+  border: 1px solid #d7dfdc;
+  border-radius: 14px;
+  background: #f9fbfa;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+.td-login-field .input-group:focus-within {
+  border-color: #178a7f;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(23, 138, 127, 0.14);
+}
+
+.td-login-field .input-group-text,
+.td-login-field .form-control {
+  border: 0;
+  background: transparent;
+}
+
+.td-login-field .input-group-text {
+  color: #178a7f;
+  padding-left: 1rem;
+  padding-right: 0.7rem;
+}
+
+.td-login-field .form-control {
+  min-height: 48px;
+  padding-left: 0.25rem;
+  color: #111827;
+  box-shadow: none;
+}
+
+.td-login-field .form-control:focus {
+  box-shadow: none;
+}
+
+.td-login-forgot,
+.td-login-forgot a,
+.td-login-links a {
+  color: #178a7f;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.td-login-forgot a:hover,
+.td-login-links a:hover {
+  color: #136b63;
+  text-decoration: underline;
+}
+
+.td-login-submit,
+.td-login-secondary {
+  max-width: none !important;
+  min-height: 48px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.td-login-submit {
+  border-color: #178a7f;
+  background: #178a7f;
+  box-shadow: 0 12px 24px rgba(23, 138, 127, 0.22);
+}
+
+.td-login-submit:hover,
+.td-login-submit:focus {
+  border-color: #136b63;
+  background: #136b63;
+}
+
+.td-login-secondary {
+  border-color: #d7dfdc;
+  background: #f4f7f6;
+  color: #263238;
+}
+
+.td-login-secondary:hover,
+.td-login-secondary:focus {
+  border-color: #c6d1ce;
+  background: #eef4f2;
+  color: #111827;
+}
+
+.td-login-card .hr-title {
+  margin: 1.6rem 0;
+  color: #6b7280;
+  font-size: 0.82rem;
+}
+
+.td-login-message {
+  margin: 0 0 1rem;
+  color: #6b7280;
+  text-align: center;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.td-login-card .apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.65rem;
+}
+
+.td-login-card .apps .m-2 {
+  margin: 0 !important;
+}
+
+.td-login-card .apps .btn {
+  width: 100%;
+}
+
+.td-login-links {
+  grid-column: 1 / -1;
+  margin: 1rem 0 0;
+  color: #6b7280;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .td-login-panel {
+    grid-template-columns: 1fr;
+    width: min(100%, 560px);
+  }
+
+  .td-login-brand {
+    min-height: auto;
+    padding: 2rem;
+  }
+
+  .td-login-brand h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .td-login-shell {
+    align-items: stretch;
+    padding: 5rem 0 0.5rem;
+  }
+
+  .td-login-topbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .td-login-panel {
+    border-radius: 18px;
+  }
+
+  .td-login-brand,
+  .td-login-card-header,
+  .td-login-card .card-body {
+    padding: 1.5rem;
+  }
+
+  .td-login-card-header {
+    flex-direction: column;
+  }
+
+}

@@ -19,7 +19,8 @@ if (preg_match("/(quarantine|qhandler)/i", $_SERVER['REQUEST_URI'])) {
 if (preg_match("/debug/i", $_SERVER['REQUEST_URI'])) {
   $css_minifier->add('/web/css/site/debug.css');
 }
-if ($_SERVER['REQUEST_URI'] == '/') {
+$request_path = rtrim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
+if ($request_path == '' || $request_path == '/admin' || $request_path == '/domainadmin' || $request_path == '/reset-password') {
   $css_minifier->add('/web/css/site/index.css');
 }
 

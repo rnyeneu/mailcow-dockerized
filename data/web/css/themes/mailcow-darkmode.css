@@ -22,6 +22,78 @@ legend {
     --bs-card-color: #bbb;
 }
 
+body:has(.td-login-shell) {
+    background:
+        radial-gradient(circle at top left, rgba(23, 138, 127, 0.16), transparent 30rem),
+        linear-gradient(135deg, #151918 0%, #1f2422 48%, #151918 100%);
+}
+
+.td-login-topbar {
+    background: rgba(31, 36, 34, 0.92);
+    border-bottom-color: #303634;
+}
+
+.td-login-theme-toggle {
+    color: #f2f2f7;
+    background: #242826;
+    border-color: #424a47;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.td-login-panel {
+    border-color: #303634;
+    background: #242826;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+}
+
+.td-login-card {
+    border: 0;
+    background: #242826;
+}
+
+.td-login-card h2 {
+    color: #f2f2f7;
+}
+
+.td-login-field .input-group {
+    border-color: #3d4542;
+    background: #1d211f;
+}
+
+.td-login-field .input-group:focus-within {
+    border-color: #1a9b8e;
+    background: #202523;
+    box-shadow: 0 0 0 4px rgba(26, 155, 142, 0.16);
+}
+
+.td-login-field .form-control {
+    color: #f2f2f7;
+}
+
+.td-login-field .form-control::placeholder {
+    color: #8e8e93;
+}
+
+.td-login-secondary {
+    color: #f2f2f7 !important;
+    background: #303634 !important;
+    border-color: #424a47 !important;
+}
+
+.td-login-secondary:hover,
+.td-login-secondary:focus {
+    background: #38403d !important;
+    border-color: #4c5652 !important;
+}
+
+.td-login-links {
+    color: #9ca3af;
+}
+
+.td-login-message {
+    color: #c7c7cc;
+}
+
 .btn-secondary, .paginate_button, .page-link, .btn-light {
     color: #f2f2f7 !important;
     background-color: #5e5e5e !important;
