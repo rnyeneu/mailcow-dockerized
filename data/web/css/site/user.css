@@ -42,6 +42,203 @@ table tbody tr {
 table tbody tr td input[type="checkbox"] {
   cursor: pointer;
 }
+
+:root {
+  --td-teal: #178a7f;
+  --td-teal-dark: #136b63;
+  --td-teal-soft: #e9f5f3;
+  --td-ink: #23312e;
+  --td-muted: #64716d;
+  --td-border: #d9e3e0;
+  --td-surface: #ffffff;
+  --td-page: #f4f8f7;
+}
+
+.navbar .navbar-brand img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+body:has(#user-content) {
+  background:
+    radial-gradient(circle at top left, rgba(23, 138, 127, 0.12), transparent 30rem),
+    var(--td-page);
+}
+
+#user-content {
+  color: var(--td-ink);
+}
+
+#user-content > .nav-tabs {
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--td-border);
+}
+
+#user-content > .nav-tabs .nav-link {
+  min-height: 44px;
+  border: 1px solid transparent;
+  border-radius: 10px 10px 0 0;
+  color: var(--td-muted);
+  background: transparent;
+  font-weight: 700;
+}
+
+#user-content > .nav-tabs .nav-link:hover,
+#user-content > .nav-tabs .nav-link:focus {
+  color: var(--td-teal-dark);
+  background: var(--td-teal-soft);
+  border-color: var(--td-border);
+}
+
+#user-content > .nav-tabs .nav-link.active,
+#user-content > .nav-tabs .nav-item.show .nav-link {
+  color: #ffffff;
+  background: var(--td-teal);
+  border-color: var(--td-teal);
+}
+
+#user-content .dropdown-menu {
+  border: 1px solid var(--td-border);
+  border-radius: 10px;
+  box-shadow: 0 18px 42px rgba(35, 49, 46, 0.12);
+}
+
+#user-content .dropdown-item.active,
+#user-content .dropdown-item:active {
+  color: #ffffff;
+  background: var(--td-teal);
+}
+
+#user-content .card {
+  overflow: hidden;
+  border: 1px solid var(--td-border);
+  border-radius: 12px;
+  background: var(--td-surface);
+  box-shadow: 0 18px 48px rgba(35, 49, 46, 0.08);
+}
+
+#user-content .card-header {
+  padding: 1rem 1.25rem;
+  color: var(--td-ink);
+  background: linear-gradient(135deg, #ffffff, #f2f7f6);
+  border-bottom: 1px solid var(--td-border);
+  font-weight: 800;
+}
+
+#user-content .card-body {
+  padding: 1.25rem;
+}
+
+#user-content legend {
+  margin-bottom: 0.75rem;
+  color: var(--td-ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+#user-content hr {
+  border-color: var(--td-border);
+  opacity: 1;
+}
+
+#user-content .btn-primary,
+#user-content .btn-success,
+#user-content .badge.bg-success {
+  border-color: var(--td-teal);
+  background-color: var(--td-teal) !important;
+  color: #ffffff !important;
+}
+
+#user-content .btn-primary:hover,
+#user-content .btn-primary:focus,
+#user-content .btn-success:hover,
+#user-content .btn-success:focus {
+  border-color: var(--td-teal-dark);
+  background-color: var(--td-teal-dark) !important;
+}
+
+#user-content .btn-secondary {
+  border-color: var(--td-border);
+  background: #eef4f2;
+  color: var(--td-ink);
+}
+
+#user-content .btn-secondary:hover,
+#user-content .btn-secondary:focus {
+  border-color: #c6d4d0;
+  background: #e3eeeb;
+  color: var(--td-ink);
+}
+
+#user-content .badge {
+  border-radius: 8px;
+  padding: 0.45rem 0.65rem;
+  font-weight: 800;
+}
+
+#user-content .badge.bg-danger {
+  background-color: #c2413b !important;
+}
+
+#user-content .progress {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #e2ebe8;
+}
+
+#user-content .progress-bar {
+  background-color: var(--td-teal) !important;
+}
+
+#user-content a {
+  color: var(--td-teal);
+  font-weight: 700;
+}
+
+#user-content a:hover,
+#user-content a:focus {
+  color: var(--td-teal-dark);
+}
+
+#recent-logins {
+  border: 1px solid var(--td-border);
+  border-radius: 12px;
+  background: #f8fbfa;
+  padding: 1rem;
+}
+
+#recent-logins .list-group {
+  border-radius: 10px;
+}
+
+#recent-logins .list-group-item {
+  border-color: var(--td-border);
+  background: #ffffff;
+}
+
+#user-content .table {
+  color: var(--td-ink);
+}
+
+#user-content .table > :not(caption) > * > * {
+  border-color: var(--td-border);
+}
+
+#user-content .table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: #f8fbfa;
+  color: var(--td-ink);
+}
+
+#user-content .selectpicker + .dropdown-toggle,
+#user-content .bootstrap-select > .dropdown-toggle {
+  border-color: var(--td-border);
+  background: #eef4f2;
+  color: var(--td-ink);
+}
+
 .label-keys {
   font-size:100%;
   margin: 0px !important;
